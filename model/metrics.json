@@ -1,0 +1,141 @@
+{
+  "best_model": "Gradient Boosting",
+  "cv_metric": "roc_auc",
+  "cv_scores": {
+    "Logistic Regression": 0.8217,
+    "Random Forest": 0.8264,
+    "Gradient Boosting": 0.829
+  },
+  "test": {
+    "roc_auc": 0.8251,
+    "pr_auc": 0.4201,
+    "at_0.5": {
+      "threshold": 0.5,
+      "accuracy": 0.8654,
+      "precision": 0.5611,
+      "recall": 0.1553,
+      "f1": 0.2433
+    },
+    "at_screening": {
+      "threshold": 0.25,
+      "accuracy": 0.8164,
+      "precision": 0.3908,
+      "recall": 0.5691,
+      "f1": 0.4634
+    }
+  },
+  "baseline_accuracy": 0.8607,
+  "positive_rate": 0.1393,
+  "threshold": 0.25,
+  "n_rows": 253680,
+  "n_train": 202944,
+  "n_test": 50736,
+  "cv_roc_auc_with_socioeconomic": 0.8301,
+  "importance": {
+    "fruit_daily": -0.0,
+    "bad_mental_health_days": 0.0,
+    "physically_active": 0.0001,
+    "smoked_100_cigarettes": 0.0002,
+    "bad_physical_health_days": 0.0005,
+    "veggies_daily": 0.0005,
+    "had_stroke": 0.0008,
+    "difficulty_walking": 0.0016,
+    "heart_disease_or_attack": 0.0024,
+    "male": 0.0026,
+    "heavy_drinker": 0.0038,
+    "cholesterol_check_5y": 0.0043,
+    "high_cholesterol": 0.0103,
+    "high_blood_pressure": 0.0151,
+    "age_group": 0.0319,
+    "bmi": 0.0363,
+    "general_health": 0.0655
+  },
+  "coefficients": null,
+  "schema": {
+    "high_blood_pressure": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "high_cholesterol": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "cholesterol_check_5y": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    "bmi": {
+      "min": 12.0,
+      "max": 98.0,
+      "default": 27.0
+    },
+    "smoked_100_cigarettes": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "had_stroke": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "heart_disease_or_attack": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "physically_active": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    "fruit_daily": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    "veggies_daily": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0
+    },
+    "heavy_drinker": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "general_health": {
+      "min": 1.0,
+      "max": 5.0,
+      "default": 2.0
+    },
+    "bad_mental_health_days": {
+      "min": 0.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    "bad_physical_health_days": {
+      "min": 0.0,
+      "max": 30.0,
+      "default": 0.0
+    },
+    "difficulty_walking": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "male": {
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0
+    },
+    "age_group": {
+      "min": 1.0,
+      "max": 13.0,
+      "default": 8.0
+    }
+  }
+}
